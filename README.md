@@ -1,52 +1,21 @@
-# Cloud Enabled Deployment In Action with AWS
+# Enterprise Cloud Architecture - Practical Assignment
 
-This repository contains four projects:
+## 👤 Student Details
+- **Name:** H.R.P.L.C.K. Siyambalapitiya  
+- **Registration Number:** [2301671114]  
+- **Batch:** GDSE-67
+- **Email:** [ckpathumck@gmail.com] 
+- **Phone:** [+94755705768]
+---
 
-- course-service (Spring Boot + MySQL)
-- student-service (Spring Boot + MongoDB)
-- media-service (Spring Boot + Local file storage, can be extended to S3/MinIO)
-- frontend-app (React + TypeScript)
+## 📖 Description
+This repository contains my practical assignment submission for the module.  
+It includes the implementation, source code, and a short video demonstration showcasing the work.  
+All requirements mentioned in the assignment guidelines have been followed, including proper commit history, documentation, and licensing.  
 
-## Backend Services
+---
 
-### 1. course-service
-- Entity: Course(id, name, duration)
-- Endpoints:
-  - GET /courses
-  - GET /courses/{id}
-  - POST /courses
-  - DELETE /courses/{id}
-- Default port: 8081
-- Configure MySQL settings
+## 📹 Video Demonstration
+▶️ [Watch the Video] https://drive.google.com/file/d/1Jg9x6NfXHqX6LxS2ydhzZT94HzWZ0PxA/view?usp=drive_link  
 
-### 2. student-service
-- Document: Student(registrationNumber, fullName, address, contact, email)
-- Endpoints:
-  - GET /students
-  - GET /students/{id}
-  - POST /students
-  - DELETE /students/{id}
-- Default port: 8082
-- Configure MongoDB settings
-
-### 3. media-service
-- Resource: files
-- Endpoints:
-  - POST /files (multipart/form-data: file)
-  - GET /files (list)
-  - GET /files/{id} (fetch)
-  - DELETE /files/{id} (delete)
-- Default port: 8083
-- Uses local disk storage at `./data/media` by default (override with env var `MEDIA_STORAGE_DIR`).
-
-## Frontend (frontend-app)
-- React + TypeScript + MUI + Axios + Vite app with 3 sections: Courses, Students, Media
-- Scripts:
-  - npm run dev (Vite dev server)
-  - npm run build (TypeScript build + Vite build)
-  - npm run preview (Preview built app)
-
-## Build
-
-- Backend: run `mvn -q -e -DskipTests package` at repo root to build services.
-- Frontend: run `npm install` then `npm run dev` inside `frontend-app`.
+---
